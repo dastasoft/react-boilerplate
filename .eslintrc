@@ -1,4 +1,9 @@
 {
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "env": {
     "browser": true,
     "es2021": true
@@ -8,7 +13,7 @@
     "plugin:jest/recommended",
     "plugin:jest/style",
     "plugin:react/recommended",
-    "airbnb-typescript",
+    "airbnb-typescript/base",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
@@ -23,7 +28,6 @@
   "plugins": [
     "import",
     "jest",
-    "jsx-a11y",
     "react",
     "react-hooks",
     "@typescript-eslint",
@@ -33,6 +37,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
     "react/react-in-jsx-scope": 0,
     "react/jsx-props-no-spreading": 0,
-    "arrow-body-style": 0
+    "arrow-body-style": 0,
+    "import/extensions": 0
   }
 }
