@@ -1,12 +1,34 @@
-import { BrowserRouter as Router } from 'react-router-dom'
+import './App.css'
 
-import Routes from './routes'
-import { HOMEPAGE } from './lib/constants'
+import { useState } from 'react'
 
-export default function App() {
+import logo from './logo.svg'
+
+function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <Router basename={HOMEPAGE}>
-      <Routes />
-    </Router>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+        <br />
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+      </header>
+    </div>
   )
 }
+
+export default App

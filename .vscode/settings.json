@@ -1,0 +1,6 @@
+{
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.fixAll.eslint"
+  ]
+}
