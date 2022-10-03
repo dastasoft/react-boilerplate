@@ -1,6 +1,7 @@
 {
   "name": "cra-typescript-boilerplate",
   "version": "0.1.0",
+  "author": "dastasoft <dastasoft@protonmail.com> (https://dastasoft.com)",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -32,7 +33,7 @@
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
   },
-  "pre-commit": "npm run format && npm run lint:fix",
+  "pre-commit": "pre:commit",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -40,7 +41,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "pre:commit": "npm run format && npm run lint:fix"
   },
   "eslintConfig": {
     "extends": [
